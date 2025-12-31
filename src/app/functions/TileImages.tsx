@@ -20,7 +20,7 @@ type ImagesProps = Omit<ImageProps, "ref"> & {
   perspective?: number;
   /** Extra class on the wrapper */
   wrapperClassName?: string;
-  parentRef: React.RefObject<HTMLDivElement>;
+
 };
 
 const Images = React.forwardRef<ImagesHandle, ImagesProps>(function Images(
@@ -30,7 +30,7 @@ const Images = React.forwardRef<ImagesHandle, ImagesProps>(function Images(
     scale = 1.03,
     perspective = 900,
     wrapperClassName,
-    parentRef,
+
     className,
 
     ...imgProps
@@ -53,9 +53,8 @@ const Images = React.forwardRef<ImagesHandle, ImagesProps>(function Images(
       ? "transform 220ms ease"
       : "transform 60ms ease-out";
 
-    el.style.transform = `perspective(${perspective}px) rotateX(${rx}deg) rotateY(${ry}deg) scale(${
-      leaving ? 1 : scale
-    })`;
+    el.style.transform = `perspective(${perspective}px) rotateX(${rx}deg) rotateY(${ry}deg) scale(${leaving ? 1 : scale
+      })`;
   };
 
   const onMove = (clientX: number, clientY: number) => {
@@ -99,7 +98,7 @@ const Images = React.forwardRef<ImagesHandle, ImagesProps>(function Images(
       }}
     >
       <Image
-        ref={ref}
+        ref={ref as React.RefObject<HTMLImageElement> | undefined}
         {...imgProps}
         className={revealUp(arrived, className ?? "")}
         style={{

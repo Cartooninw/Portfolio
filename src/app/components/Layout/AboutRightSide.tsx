@@ -98,7 +98,7 @@ export default function ARightSide() {
           arrived4,
           "mt-12 flex items-center gap-3 delay-[300ms] md:delay-[450ms]"
         )}
-        ref={ref4}
+        ref={ref4 as React.RefObject<HTMLDivElement> | undefined}
       >
         <Grip size={24} className="opacity-80" />
         <span

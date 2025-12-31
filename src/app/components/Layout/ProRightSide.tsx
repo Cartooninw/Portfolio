@@ -80,10 +80,10 @@ export default function ProRightSide() {
               "w-full max-w-3xl rounded-xl p-6 transition duration-200 outline-none  ",
               // NOT selected
               !isActive &&
-                "border border-transparent bg-transparent hover:opacity-100 hover:border-white/10 hover:bg-white/5 hover:backdrop-blur",
+              "border border-transparent bg-transparent hover:opacity-100 hover:border-white/10 hover:bg-white/5 hover:backdrop-blur",
               // SELECTED
               isActive &&
-                "border-t border-white/5 bg-white/3 shadow-sm backdrop-blur",
+              "border-t border-white/5 bg-white/3 shadow-sm backdrop-blur",
               // SOME OTHER selected
               isOtherActive && "opacity-50",
             ].join(" ")}

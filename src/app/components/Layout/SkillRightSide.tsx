@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // --- Utility for cleaner tailwind classes ---
 function cn(...inputs: ClassValue[]) {
@@ -274,7 +275,7 @@ const MarqueeRow = ({
                 {/* In real app, render <Image /> here */}
                 {hasIcon ? (
                   <Image
-                    src={item.icon}
+                    src={item.icon as string | StaticImport}
                     alt={item.name}
                     width={24}
                     height={24}

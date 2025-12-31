@@ -105,7 +105,7 @@ export function ExpLeftSide({
             arrived,
             "text-5xl font-extrabold tracking-tight text-slate-100"
           )}
-          ref={ref}
+          ref={ref as React.RefObject<HTMLHeadingElement> | undefined}
         >
           {name}
         </h1>
@@ -117,14 +117,14 @@ export function ExpLeftSide({
             arrived2,
             "mt-5 max-w-sm text-base leading-relaxed text-slate-300/80"
           )}
-          ref={ref2}
+          ref={ref2 as React.RefObject<HTMLParagraphElement> | undefined}
         >
           {tagline}
         </p>
         <br />
         {/* Nav */}
         <nav className="mt-14">
-          <ul className={revealUp(arrived3, "space-y-3")} ref={ref3}>
+          <ul className={revealUp(arrived3, "space-y-3")} ref={ref3 as React.RefObject<HTMLUListElement> | undefined}>
             {nav.map((item, index) => {
               const isActive = index.toString() + "ex" === activeId;
 
@@ -161,7 +161,7 @@ export function ExpLeftSide({
       <div className="pb-10">
         <div
           className={revealUp(arrived4, "flex items-center gap-5")}
-          ref={ref4}
+          ref={ref4 as React.RefObject<HTMLDivElement> | undefined}
         >
           {socials.map((s) => (
             <a

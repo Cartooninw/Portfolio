@@ -61,6 +61,7 @@ export default function Layout() {
   return (
     <div
       ref={mainRef}
+
       className=" relative flex flex-col w-full h-full selection:bg-[#DDD1C5] selection:text-[#19192C] "
     >
       {/* introduce */} {/* Background Grid Decoration (Subtle) */}
@@ -75,7 +76,7 @@ export default function Layout() {
         <div className=" absolute text-white top-0 left-0 w-full h-full ">
           <Canvas
             eventPrefix="client"
-            eventSource={mainRef}
+            eventSource={mainRef.current as HTMLElement}
             id="canvas"
             camera={{ position: [0, 3.5, 8.5], fov: 50 }}
             // style={{ width: "100%", height: "90vh" }}

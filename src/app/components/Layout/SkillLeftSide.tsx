@@ -64,7 +64,7 @@ export default function SkillLeftSide() {
             02 // SKILLS
           </div>
 
-          <h1 className={revealUp(arrived1, "mt-4 leading-none")} ref={ref1}>
+          <h1 className={revealUp(arrived1, "mt-4 leading-none")} ref={ref1 as React.RefObject<HTMLHeadingElement> | undefined}>
             <span
               className={[
                 "block font-extrabold",
@@ -85,7 +85,7 @@ export default function SkillLeftSide() {
         {/* left column */}
         <section className="grid grid-flow-col grid-rows-2 gap-14 pt-15">
           {/* grid gap-10  */}
-          <div className={revealUp(arrived2, "delay-100")} ref={ref2}>
+          <div className={revealUp(arrived2, "delay-100")} ref={ref2 as React.RefObject<HTMLDivElement> | undefined}>
             <div>
               <h2 className="text-sm font-semibold text-white/90">
                 Capabilities
@@ -100,7 +100,7 @@ export default function SkillLeftSide() {
             </div>
           </div>
 
-          <div className={revealUp(arrived3, "delay-200")} ref={ref3}>
+          <div className={revealUp(arrived3, "delay-200")} ref={ref3 as React.RefObject<HTMLDivElement> | undefined}>
             <h2 className="text-sm font-semibold text-white/90">Languages</h2>
             <ul className="mt-4 space-y-3 text-white/70">
               {languages.map((x) => (
@@ -111,7 +111,7 @@ export default function SkillLeftSide() {
             </ul>
           </div>
 
-          <div className={revealUp(arrived4, "delay-300")} ref={ref4}>
+          <div className={revealUp(arrived4, "delay-300")} ref={ref4 as React.RefObject<HTMLDivElement> | undefined}>
             <h2 className="text-sm font-semibold text-white/90">
               Libraries + Apps
             </h2>
@@ -124,7 +124,7 @@ export default function SkillLeftSide() {
             </ul>
           </div>
 
-          <div className={revealUp(arrived5, "delay-300")} ref={ref5}>
+          <div className={revealUp(arrived5, "delay-300")} ref={ref5 as React.RefObject<HTMLDivElement> | undefined}>
             <h2 className="text-sm font-semibold text-white/90">Tools </h2>
             <ul className="mt-4 space-y-3 text-white/70">
               {tools.map((x) => (
