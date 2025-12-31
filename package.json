@@ -9,9 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "clsx": "^2.1.1",
+    "eslint-config-prettier": "^10.1.8",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0",
+    "tree": "^0.1.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -30,5 +39,6 @@
   "trustedDependencies": [
     "sharp",
     "unrs-resolver"
-  ]
+  ],
+  "format": "prettier --write \"**/*.{ts,tsx,md,mdx,css,scss}\""
 }
