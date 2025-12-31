@@ -13,7 +13,7 @@ type DotsFieldProps = {
 
   dotColor?: string; // fillStyle :contentReference[oaicite:4]{index=4}
   backgroundColor?: string;
-  parentRef?: React.RefObject<HTMLDivElement>;
+  parentRef?: React.RefObject<HTMLDivElement | null>;
 };
 
 export default function DotsField({

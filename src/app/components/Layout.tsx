@@ -23,8 +23,8 @@ import ExpRightSide from "./Layout/ExpRightSide";
 import VerticalNavbar from "./Navigator";
 import ProRightSide from "./Layout/ProRightSide";
 export default function Layout() {
-  const mainRef = useRef(null);
-  const mainSkillRef = useRef(null);
+  const mainRef = useRef<HTMLDivElement>(null);
+  const mainSkillRef = useRef<HTMLDivElement>(null);
   const flashlightRef = useRef<CapturePointerMove>(null);
 
   const [expActiveId, setExpActiveId] = React.useState("0ex");
