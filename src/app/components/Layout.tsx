@@ -69,47 +69,43 @@ export default function Layout() {
         <DotsField parentRef={mainRef} />
       </div>
       {/* <VerticalNavbar /> */}
-      <div className="relative flex flex-row w-full h-full ">
-        <div className="h-200 w-1/2 z-20">
+      <div className="relative flex flex-col w-full h-full">
+
+        <div className="h-200 w-full lg:w-1/2 z-20">
           <LeftSide />
         </div>
-        <div className=" absolute text-white top-0 left-0 w-full h-full ">
+        <div className="hidden xl:block absolute text-white top-0 lg:top-0 left-0 w-full h-full">
           <Canvas
             eventPrefix="client"
             eventSource={mainRef.current as HTMLElement}
             id="canvas"
             camera={{ position: [0, 3.5, 8.5], fov: 50 }}
-            // style={{ width: "100%", height: "90vh" }}
             style={{ zIndex: 20 }}
           >
-            <ambientLight intensity={0.7} />
-            <directionalLight position={[5, 5, 5]} intensity={1.2} />
-            <Environment preset="sunset" blur={0.5} />
             <Suspense fallback={null}>
-              <Cozy_room position={[4, -1.5, 0]} />
+              <Cozy_room position={[4, -1.5, 0]} scale={1} />
             </Suspense>
-            {/* <OrbitControls enableDamping enableZoom={false} /> */}
           </Canvas>
         </div>
       </div>
       <div>
-        <div id="about" className="relative flex flex-row w-full h-full z-10 ">
-          <div className="h-175 w-1/2 ">
+        <div id="about" className="relative flex flex-col lg:flex-row w-full h-full z-10   justify-center items-center ">
+          <div className="h-120 lg:h-175 w-1/2  ">
             <ALeftSide />
           </div>
-          <div className=" h-175 w-1/2 bg-[#212239] ">
+          <div className=" h-200 lg:h-175 w-full lg:w-1/2 bg-[#212239] ">
             <ARightSide />
           </div>
         </div>
       </div>
-      <div id="skills" ref={mainSkillRef} className="relative flex flex-row w-full h-full ">
+      <div id="skills" ref={mainSkillRef} className="relative flex flex-col lg:flex-row w-full h-full ">
         <div className="absolute h-full w-full inset-0 z-0 ">
           <DotsField parentRef={mainSkillRef} />
         </div>
-        <div className="h-full w-1/2 ">
+        <div className="h-full w-full lg:w-1/2 ">
           <SkillLeftSide />
         </div>
-        <div className=" h-full w-1/2  ">
+        <div className=" h-full w-full  lg:w-1/2  ">
           <SkillRightSide />
         </div>
       </div>
@@ -120,19 +116,23 @@ export default function Layout() {
       <GlowBackground
 
         ref={flashlightRef}
-        className="h-600 w-full flex flex-row pl-10"
+        className=" w-full flex flex-col h-800 lg:h-600 md:flex-row md:pl-10"
       >
-        <div className="sticky top-0 items-start flex justify-center h-screen w-1/2  ">
+        <div className="hidden md:flex sticky top-0 items-start  justify-center h-screen w-1/2  ">
           <br />
+
           <br />
           <ExpLeftSide intersectingChange={expActiveId} />
         </div>
-        <div className=" w-1/2 ">
+        <div className=" w-full md:w-1/2 flex flex-col items-center ">
+          <div className="md:hidden  text-center mt-8 font-mono text-xs tracking-[0.3em] text-[#C16E67]">
+            03 // <br />Experience &Projects
+          </div>
           <div
             ref={scrollingRef[0]}
             id="experience"
             data-targetnav="0ex"
-            className="min-h-screen flex flex-col justify-center "
+            className="md:min-h-screen flex flex-col md:justify-center "
           >
             <ExpRightSide />
           </div>

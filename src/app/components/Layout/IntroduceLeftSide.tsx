@@ -21,7 +21,7 @@ export default function LeftSide() {
         </div>
 
         {/* Top Label */}
-        <div className="mt-8 font-mono text-xs tracking-[0.3em] text-[#C16E67]">
+        <div className="mt-8 font-mono text-xs text-start tracking-[0.3em] text-[#C16E67]">
           00 // INTRODUCTION
         </div>
 
@@ -36,7 +36,7 @@ export default function LeftSide() {
 
             {/* Name Title */}
             <h1
-              className="font-display text-5xl md:text-8xl font-bold uppercase leading-[0.85] tracking-tighter text-transparent"
+              className="font-display text-5xl lg:text-8xl text-center lg:text-left font-bold uppercase leading-[0.85] tracking-tighter text-transparent"
               style={{ WebkitTextStroke: "2px white" }}
             >
               RADTHAPOOM <br />
@@ -44,7 +44,7 @@ export default function LeftSide() {
             </h1>
 
             {/* Subtitles */}
-            <div className="mt-8 flex flex-col gap-4">
+            <div className="mt-8 flex flex-col gap-4 items-center lg:items-start">
               <h2 className="font-mono text-3xl font-bold uppercase tracking-widest text-white/90">
                 Portfolio ©2025
               </h2>

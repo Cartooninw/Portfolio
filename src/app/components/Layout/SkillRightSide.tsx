@@ -298,7 +298,7 @@ const MarqueeRow = ({
 // --- Main Component ---
 export default function TechStackSection() {
   return (
-    <section className="w-200 h-full flex flex-col justify-center gap-16 py-50  overflow-hidden">
+    <section className="w-full  h-full flex flex-col justify-center gap-16 py-50  overflow-hidden">
       {ALL_ROWS.map((rowItems, index) => {
         // Alternating logic: Even rows go Left, Odd rows go Right
         const isEven = index % 2 === 0;

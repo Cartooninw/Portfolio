@@ -123,7 +123,7 @@ export function ExpLeftSide({
         </p>
         <br />
         {/* Nav */}
-        <nav className="mt-14">
+        <nav className="mt-14 ">
           <ul className={revealUp(arrived3, "space-y-3")} ref={ref3 as React.RefObject<HTMLUListElement> | undefined}>
             {nav.map((item, index) => {
               const isActive = index.toString() + "ex" === activeId;

@@ -63,12 +63,15 @@ export default function ProRightSide() {
       stacks: ["Pytorch", "AI", "AI fine-tuning"],
     },
   ];
+  const width = typeof window === "undefined" ? 0 : window.innerWidth;
+
+  const isMobile = width < 768;
 
   return (
     <div className="flex flex-col gap-4">
       {infos.map((info, index) => {
-        const isActive = index + 1 === activeIndex;
-        const isOtherActive = activeIndex !== 0 && !isActive;
+        const isActive = index + 1 === activeIndex && !isMobile;
+        const isOtherActive = activeIndex !== 0 && !isActive && !isMobile;
         return (
           <article
             key={index}
@@ -90,7 +93,7 @@ export default function ProRightSide() {
           >
             <div className="grid grid-cols-12 gap-6">
               {/* Left date */}
-              <div className="col-span-12 md:col-span-3">
+              <div className="col-span-12 md:col-span-3 md:block flex justify-center">
                 <Image src={info.Picture[0]} alt="" width={180} height={120} />
               </div>
 
@@ -123,7 +126,7 @@ export default function ProRightSide() {
                   {info.explainations}
                 </p>
 
-                <ul className="mt-5 flex flex-wrap gap-2">
+                <ul className="mt-5 flex justify-center md:justify-stretch flex-wrap gap-2">
                   {info.stacks.map((tech: string, i: number) => (
                     <li key={i}>
                       <span

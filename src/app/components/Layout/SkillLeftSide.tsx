@@ -57,7 +57,7 @@ export default function SkillLeftSide() {
   return (
     <main className="relative min-h-screen w-full overflow-hidden  text-white">
       {/* dotted grid background */}
-      <div className="relative mx-auto w-full  px-26 py-40">
+      <div className="relative mx-auto w-full  lg:px-26 px-10 lg:py-40">
         {/* header */}
         <div className="mt-12">
           <div className="font-mono text-xs tracking-[0.35em] text-[#C16E67]">

@@ -23,7 +23,7 @@ export default function ARightSide() {
     once: true,
   });
   return (
-    <div className="relative flex h-full w-full flex-col justify-center p-8 md:p-12 text-white">
+    <div className="relative overflow-hidden flex h-full w-full flex-col justify-center items-center p-8 md:p-12 text-white">
       {/* --- DECORATIVE: Signature (Top Right) --- */}
       <div className="absolute right-12 top-12 opacity-80">
         <svg
@@ -45,7 +45,7 @@ export default function ARightSide() {
       </div>
 
       {/* --- MAIN HEADLINES --- */}
-      <div className="relative z-10 flex flex-col gap-2 uppercase leading-none tracking-tighter">
+      <div className="relative  z-10 flex flex-col gap-2  uppercase leading-none tracking-tighter">
         <h2
           className={revealUp(
             arrived1,
@@ -53,7 +53,7 @@ export default function ARightSide() {
           )}
           ref={ref1}
         >
-          <div className="block h-10">
+          <div className="block h-10 ">
             <TypingAnimation
               words={["Full Stack", "Frontend", "Backend", "Software"]}
             />
@@ -76,7 +76,7 @@ export default function ARightSide() {
         <p
           className={revealUp(
             arrived3,
-            "font-mono text-sm leading-relaxed text-gray-300 md:text-base transition-all  delay-[200ms] md:delay-[300ms]"
+            "font-mono text-sm  leading-relaxed text-gray-300 md:text-base transition-all  delay-[200ms] md:delay-[300ms]"
           )}
           ref={ref3}
         >

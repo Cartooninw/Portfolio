@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React, { useRef,useMemo } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
+
 
 export function Cozy_room(props) {
   const { nodes, materials } = useGLTF('/models/cozy_room-transformed.glb')
@@ -35,6 +36,20 @@ export function Cozy_room(props) {
       0.1 
     )
   })
+
+
+
+
+  const { viewport } = useThree();
+
+  const { scale, position } = useMemo(() => {
+    const isNarrow = viewport.width < 1024;
+    return {
+      scale: isNarrow ? 0.75 : 1,
+      position: (isNarrow ? [2.8, -1.2, 0] : [4, -1.5, 0])
+    };
+  }, [viewport.width]);
+
 
   return (
     // OUTER GROUP: Position + Spinning
