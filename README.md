@@ -34,20 +34,21 @@ Check out the live version here:
 To run this project locally, follow these steps:
 1. Clone the repository
 Bash
-
+```bash
 git clone [https://github.com/Cartooninw/Portfolio.git](https://github.com/Cartooninw/Portfolio.git)
 cd Portfolio
-
+```
 2. Install dependencies
 
 This project uses Bun. If you don't have it installed, check out the Bun installation guide.
 Bash
-
+```bash
 bun install
-
+```
 3. Run the development server
 Bash
-
+```bash
 bun dev
-
+```
 Open http://localhost:3000 with your browser to see the result.
+
