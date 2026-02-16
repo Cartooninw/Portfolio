@@ -4,7 +4,7 @@ export default function ProRightSide() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const infos = [
     {
-      Picture: ["/icons/experience.png"],
+      Picture: ["/images/POS_JAVA.png"],
       herf: "https://github.com/Cartooninw/POSProject-JAVASWING",
       companys: ["Java Swing"],
       positions: ["Point of Sale Project"],
@@ -14,7 +14,7 @@ export default function ProRightSide() {
       stacks: ["Java", "Java Swing"],
     },
     {
-      Picture: ["/icons/experience.png"],
+      Picture: ["/images/ChatJAVA.png"],
       herf: "https://github.com/Cartooninw/Simple-Chat_JavaSwing_Socket",
       companys: ["Java Swing"],
       positions: ["Simple Chat "],
@@ -24,7 +24,7 @@ export default function ProRightSide() {
       stacks: ["Java", "Java Swing", "Socket", "java.net"],
     },
     {
-      Picture: ["/icons/experience.png"],
+      Picture: ["/images/PosPHP.png"],
       herf: "https://github.com/Cartooninw/Booking-project_-PHP",
       companys: ["PHP"],
       positions: ["Booking Project"],
@@ -43,7 +43,7 @@ export default function ProRightSide() {
       stacks: ["Nuxtjs", "Elysia", "MongoDB", "Docker"],
     },
     {
-      Picture: ["/icons/experience.png"],
+      Picture: ["/images/noimage.png"],
       herf: "/IImage Classification — Holy Basil vs Thai Basil (CNN).pdf",
       companys: ["tensorflow"],
       positions: ["IImage Classification — Holy Basil vs Thai Basil (CNN)"],
@@ -53,7 +53,7 @@ export default function ProRightSide() {
       stacks: ["tensorflow", "AI", "AI fine-tuning"],
     },
     {
-      Picture: ["/icons/experience.png"],
+      Picture: ["/images/noimage.png"],
       herf: "/Object Detection — Cars (YOLOv5 & Roboflow) .pdf",
       companys: ["Pytorch"],
       positions: ["Object Detection — Cars (YOLOv5 & Roboflow)"],
