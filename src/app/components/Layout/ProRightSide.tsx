@@ -44,7 +44,7 @@ export default function ProRightSide() {
     },
     {
       Picture: ["/images/noimage.png"],
-      herf: "/IImage Classification — Holy Basil vs Thai Basil (CNN).pdf",
+      herf: "/Image Classification — Holy Basil vs Thai Basil (CNN).pdf",
       companys: ["tensorflow"],
       positions: ["IImage Classification — Holy Basil vs Thai Basil (CNN)"],
       explainations: [
