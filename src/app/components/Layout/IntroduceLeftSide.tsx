@@ -46,7 +46,7 @@ export default function LeftSide() {
             {/* Subtitles */}
             <div className="mt-8 flex flex-col gap-4 items-center lg:items-start">
               <h2 className="font-mono text-3xl font-bold uppercase tracking-widest text-white/90">
-                Portfolio ©2025
+                Portfolio ©2026
               </h2>
               <div className="flex items-center gap-4 text-sm font-semibold tracking-[0.2em] text-cyan-300">
                 <span>AI</span>

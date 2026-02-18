@@ -44,9 +44,9 @@ export default function ProRightSide() {
     },
     {
       Picture: ["/images/noimage.png"],
-      herf: "/Image Classification — Holy Basil vs Thai Basil (CNN).pdf",
+      herf: "/IImage Classification — Holy Basil vs Thai Basil (CNN).pdf",
       companys: ["tensorflow"],
-      positions: ["IImage Classification — Holy Basil vs Thai Basil (CNN)"],
+      positions: ["Image Classification — Holy Basil vs Thai Basil (CNN)"],
       explainations: [
         "Designed and trained a CNN image-classification model, including data preprocessing, hyperparameter tuning to reduce overfitting, and evaluation using accuracy-based classification metrics.",
       ],
